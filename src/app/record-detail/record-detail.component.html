@@ -1,0 +1,10 @@
+<div *ngIf="record" class="records">
+    <h2>{{record.prod_name | uppercase}} Details</h2>
+    <div><span>Description: </span>{{record.prod_desc}}</div>
+    <div><span>Price: </span>{{record.prod_price}}</div>
+    <div>
+      <button routerLink="/record-update/{{record.id}}">
+        Edit
+      </button>
+    </div>
+  </div>

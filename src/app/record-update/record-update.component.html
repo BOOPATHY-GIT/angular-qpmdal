@@ -1,0 +1,15 @@
+<div>
+    <h2>Record Edit</h2>
+    <div>
+      <label>Record Name:
+        <input [(ngModel)]="recordData.prod_name" placeholder="Record Name"/>
+      </label><br>
+      <label>Record Desc:
+        <input [(ngModel)]="recordData.prod_desc" placeholder="Record Description"/>
+      </label><br>
+      <label>Price:
+        <input [(ngModel)]="recordData.prod_price" placeholder="Price"/>
+      </label><br>
+    </div>
+    <button (click)="updateRecord()">Update</button>
+  </div>
